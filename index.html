@@ -14,24 +14,31 @@
 
   <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo2.png" class="logo">
-                <ul id="sidemenu">
+      <div class="container">
+        <nav>
+          <a href="https://github.com/VaibhavR02/portfolio" target="_blank"
+            ><img src="images/logo2.png" class="logo"
+          /></a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Interest</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
 
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Interest</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Front-end Designer</p>
-                <h1>Hi, I'm <span>Vaibhav</span> <br>From Mumbai </h1>
-            </div>
+          <!-- ----------------------------light and moon----------------------- -->
+          <!-- <div class="tdnn">
+            <div class="moon"></div>
+          </div> -->
+          <!-- ----------------------------light and moon----------------------- -->
+
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <!-- <p>Front-end Designer</p> -->
+          <h1>Hi, I'm <span>Vaibhav</span> <br />From Mumbai</h1>
         </div>
       </div>
     </div>
@@ -106,7 +113,15 @@
             <a href="#">Learn more</a>
           </div>
 
-         
+          <!-- <div>
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>Backend Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, excepturi.
+            </p>
+            <a href="#">Learn more</a>
+          </div> -->
         </div>
       </div>
     </div>
@@ -141,6 +156,7 @@
               ></a>
             </div>
           </div>
+        </div>
 
         <a href="#" class="btn">See more</a>
       </div>
@@ -207,7 +223,15 @@
         </p>
       </div>
     </div>
-    
+    <!-- ---------------------------- js for light and moon ----------------------- -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+      $('.tdnn').click(function () {
+          $("body").toggleClass('light');
+          $(".moon").toggleClass('sun');
+          $(".tdnn").toggleClass('day');
+        });
+    </script> -->
+    <!-- ---------------------------- js for light and moon ----------------------- -->
     <script>
       var tablinks = document.getElementsByClassName('tab-links');
       var tabcontents = document.getElementsByClassName('tab-contents');
